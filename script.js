@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Back to Top Button
+
     const backToTopBtn = document.getElementById("backToTop");
   
-    // Show/hide button on scroll
     window.addEventListener("scroll", () => {
       if (window.scrollY > 300) {
         backToTopBtn.style.display = "block";
@@ -11,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   
-    // Scroll to top when button clicked
     backToTopBtn.addEventListener("click", () => {
       window.scrollTo({
         top: 0,
@@ -19,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   
-    // Scrollspy (active link highlight)
     const sections = document.querySelectorAll("section[id]");
     const navLinks = document.querySelectorAll(".section-nav a");
   
@@ -42,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   
-    // Lightbox for expanding images
     window.expandImage = function (imgElement) {
       const lightbox = document.getElementById("lightbox");
       const lightboxImg = document.getElementById("lightbox-img");
