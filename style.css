@@ -352,7 +352,6 @@
     transform: scale(1.1);
   }
   
-  /* Highlight active link */
   .section-nav a.active {
     color: #ffffff;
   }
