@@ -381,21 +381,24 @@
   }
   
   #backToTop {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    z-index: 99;
-    font-size: 24px;
-    background-color: #7fffd4;
-    color: #002642;
-    border: none;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #00ffff;
+  color: black;
+  font-size: 24px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00ffff;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  animation: bounce 2s infinite;
+  transition: all 0.3s ease;
   }
   
   #backToTop:hover {
@@ -403,4 +406,80 @@
     transform: scale(1.1);
   }
   
- 
+ .button, .section-nav a {
+  transition: all 0.3s ease;
+}
+
+.button:hover, .section-nav a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+  color: #00ffff;
+}
+
+.member-card, .leader-card, .supervisor-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover, .leader-card:hover, .supervisor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.2);
+}
+
+.icon svg {
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.icon:hover svg {
+  transform: scale(1.2);
+  fill: #00ffff;
+}
+
+.section-nav a {
+  position: relative;
+  transition: color 0.3s;
+}
+
+.section-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #00ffff;
+  transition: width 0.3s;
+}
+
+.section-nav a:hover::after {
+  width: 100%;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.section-nav a.active {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+
+.member-card:hover,
+.supervisor-card:hover,
+.leader-card:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 15px 30px rgba(0, 255, 255, 0.3);
+}
+
+.result-image img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.result-image img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
