@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Communication For All</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -24,7 +26,7 @@
   </nav>
   
 
-  <section class="hero">
+  <section class="hero" data-aos="fade-up">
     <h2 class="mission">
       Bridging Communication Gaps Between the Deaf and the Hearing
     </h2>
@@ -33,7 +35,7 @@
     </h2>
   </section>
   
-  <section id="results" class="results">
+  <section id="results" class="results" data-aos="fade-up">
     <h2 class="section-title">Project Results</h2>
     <div class="results-content">
         <div class="result-image">
@@ -56,7 +58,7 @@
       
   </section>
   
-  <section id="objectives" class="objectives">
+  <section id="objectives" class="objectives" data-aos="fade-right">
     <h2 class="section-title">Project Objectives</h2>
     <ul class="objectives-list">
       <li>Facilitate Communication For Deaf and Mute Individuals Using Technology</li>
@@ -68,7 +70,7 @@
   </section>
   
   
-    <section id="team" class="team">
+    <section id="team" class="team" data-aos="fade-up">
         <h2 class="section-title">Project Team</h2>
       
         
@@ -112,7 +114,8 @@
         </div>
       
         <div class="team-grid">
-          <div class="member-card">
+          <div class="member-card" data-aos="zoom-in-up">
+
             <img src="mshari-alotaibe.png" alt="Mshari Alotaibe" class="profile-img">
             <p class="member-name">Mshari Alotaibe</p>
             <h5>App & Web Developer</h5>
@@ -137,7 +140,8 @@
             </div>
           </div>
       
-          <div class="member-card">
+          <div class="member-card" data-aos="zoom-in-up">
+
             <img src="thamer-alsharif.png" alt="Thamer Alsharif" class="profile-img">
             <p class="member-name">Thamer Alsharif</p>
             <h5>Documentation Coordinator</h5>
@@ -161,7 +165,8 @@
             </div>
           </div>
       
-          <div class="member-card">
+          <div class="member-card" data-aos="zoom-in-up">
+
             <img src="unknown.png" alt="Abdulaziz Mahdi" class="profile-img">
             <p class="member-name">Abdulaziz Mahdi</p>
             <h5>Presentaion Designer</h5>
@@ -185,7 +190,8 @@
             </div>
           </div>
       
-          <div class="member-card">
+          <div class="member-card" data-aos="zoom-in-up">
+
             <img src="unknown.png" alt="Ahmed Abdou" class="profile-img">
             <p class="member-name">Ahmed Abdou</p>
             <h5>Assistant Presentation Designer</h5>
@@ -209,7 +215,8 @@
             </div>
           </div>
       
-          <div class="member-card">
+          <div class="member-card" data-aos="zoom-in-up">
+
             <img src="unknown.png" alt="Saeed Almalki" class="profile-img">
             <p class="member-name">Saeed Almalki</p>
             <h5>Technical Writer</h5>
@@ -233,7 +240,8 @@
             </div>
           </div>
       
-          <div class="member-card">
+          <div class="member-card" data-aos="zoom-in-up">
+
             <img src="unknown.png" alt="Mohammed Algobashe" class="profile-img">
             <p class="member-name">Mohammed Algobashe</p>
             <h5>Report Reviewer</h5>
@@ -257,7 +265,8 @@
             </div>
           </div>
       
-          <div class="member-card">
+          <div class="member-card" data-aos="zoom-in-up">
+
             <img src="unknown.png" alt="Faisal Althumali" class="profile-img">
             <p class="member-name">Faisal Althumali</p>
             <h5>Hardware Design Engineer</h5>
@@ -281,7 +290,8 @@
             </div>
           </div>
       
-          <div class="member-card">
+          <div class="member-card" data-aos="zoom-in-up">
+
             <img src="fahad.png" alt="Fahad Althobaiti" class="profile-img">
             <p class="member-name">Fahad Althobaiti</p>
             <h5>Embedded System Developer</h5>
@@ -318,6 +328,15 @@
     <p class="footer-copy">© 2025 Communication For All – Taif University</p>
   </footer>
   <button id="backToTop" title="Back to Top">↑</button>
+
+ 
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,      
+    once: true           
+  });
+</script>
 
 </body>
 </html>
