@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-
+    
     const backToTopBtn = document.getElementById("backToTop");
   
     window.addEventListener("scroll", () => {
@@ -52,3 +52,10 @@ document.addEventListener("DOMContentLoaded", function () {
     };
   });
   
+  window.addEventListener("scroll", function () {
+  const scrollProgress = document.getElementById("scrollProgress");
+  const scrollTop = window.scrollY;
+  const docHeight = document.body.scrollHeight - window.innerHeight;
+  const scrollPercent = (scrollTop / docHeight) * 100;
+  scrollProgress.style.width = scrollPercent + "%";
+});
