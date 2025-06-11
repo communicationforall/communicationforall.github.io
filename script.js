@@ -54,8 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
   
   window.addEventListener("scroll", function () {
   const scrollProgress = document.getElementById("scrollProgress");
-  const scrollTop = window.scrollY;
-  const docHeight = document.body.scrollHeight - window.innerHeight;
-  const scrollPercent = (scrollTop / docHeight) * 100;
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrollPercent = (scrollTop / scrollHeight) * 100;
   scrollProgress.style.width = scrollPercent + "%";
 });
+
